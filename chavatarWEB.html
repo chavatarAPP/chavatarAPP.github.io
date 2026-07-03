@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chavatar — Assistance / Soporte / Support</title>
+<style>
+  :root {
+    --bg: #0d0d1a; --card: #1a1a2e; --accent: #b57edc; --accent2: #f5a623;
+    --text: #f0f0f5; --muted: #9a9ab0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(160deg, #0d0d1a 0%, #1e1230 50%, #0d1524 100%);
+    color: var(--text); min-height: 100vh; padding: 24px 16px 48px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; padding: 32px 0 24px; }
+  .logo { font-size: 64px; }
+  h1 { font-size: 32px; font-weight: 800; margin-top: 8px;
+       background: linear-gradient(90deg, var(--accent2), var(--accent));
+       -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .tagline { color: var(--muted); margin-top: 6px; font-size: 15px; }
+  .lang-switch { display: flex; justify-content: center; gap: 8px; margin: 20px 0; }
+  .lang-switch button {
+    background: var(--card); color: var(--text); border: 1px solid #333;
+    border-radius: 20px; padding: 8px 18px; font-size: 15px; cursor: pointer;
+  }
+  .lang-switch button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 18px; padding: 22px; margin-bottom: 16px; backdrop-filter: blur(8px);
+  }
+  .card h2 { font-size: 18px; margin-bottom: 10px; color: var(--accent2); }
+  .card p, .card li { font-size: 15px; line-height: 1.6; color: var(--text); }
+  .card ul { padding-left: 20px; margin-top: 6px; }
+  a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .btn {
+    display: block; text-align: center; background: linear-gradient(90deg, var(--accent2), var(--accent));
+    color: #fff !important; border-radius: 14px; padding: 14px; font-size: 16px; font-weight: 700;
+    margin-top: 10px;
+  }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px; }
+  [data-lang] { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🐱</div>
+    <h1>Chavatar</h1>
+    <p class="tagline" data-lang="fr">Assistance &amp; contact</p>
+    <p class="tagline" data-lang="es">Soporte y contacto</p>
+    <p class="tagline" data-lang="en">Support &amp; contact</p>
+  </header>
+
+  <div class="lang-switch">
+    <button data-set="fr">🇫🇷 Français</button>
+    <button data-set="es">🇪🇸 Español</button>
+    <button data-set="en">🇬🇧 English</button>
+  </div>
+
+  <!-- ===================== FRANÇAIS ===================== -->
+  <div data-lang="fr">
+    <div class="card">
+      <h2>💬 Nous contacter</h2>
+      <p>Une question, un problème, une suggestion ? Écrivez-nous, nous répondons rapidement.</p>
+      <a class="btn" href="mailto:jajajairhercruz@gmail.com?subject=Chavatar%20—%20Assistance">Envoyer un e-mail</a>
+    </div>
+    <div class="card">
+      <h2>❓ Questions fréquentes</h2>
+      <ul>
+        <li><strong>Comment restaurer mes achats ?</strong> Réglages → Achats → « Restaurer les achats », ou depuis l'écran Chavatar Pro.</li>
+        <li><strong>L'avatar IA n'apparaît pas ?</strong> La génération IA nécessite un iPhone compatible Apple Intelligence.</li>
+        <li><strong>Le Ronronomètre n'entend rien ?</strong> Vérifiez que l'accès au micro est autorisé sur l'Apple Watch et placez le poignet près de votre chat, dans une pièce calme.</li>
+        <li><strong>Mes données sont-elles privées ?</strong> Oui : tout reste sur votre appareil. Aucun son n'est enregistré, aucune donnée n'est transmise.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>🐾 Les chats du quartier</h2>
+      <p>Une partie de chaque achat nous aide à nourrir et soigner les chats errants de notre quartier. Suivez leurs aventures : <a href="https://www.tiktok.com/@lejardindeschachous" target="_blank">@lejardindeschachous</a></p>
+    </div>
+  </div>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <div data-lang="es">
+    <div class="card">
+      <h2>💬 Contáctanos</h2>
+      <p>¿Una pregunta, un problema, una sugerencia? Escríbenos, respondemos rápido.</p>
+      <a class="btn" href="mailto:jajajairhercruz@gmail.com?subject=Chavatar%20—%20Soporte">Enviar un correo</a>
+    </div>
+    <div class="card">
+      <h2>❓ Preguntas frecuentes</h2>
+      <ul>
+        <li><strong>¿Cómo restauro mis compras?</strong> Ajustes → Compras → «Restaurar compras», o desde la pantalla de Chavatar Pro.</li>
+        <li><strong>¿No aparece el avatar IA?</strong> La generación con IA requiere un iPhone compatible con Apple Intelligence.</li>
+        <li><strong>¿El Ronronómetro no escucha nada?</strong> Verifica que el micrófono esté autorizado en el Apple Watch y acerca la muñeca a tu gato, en una habitación tranquila.</li>
+        <li><strong>¿Mis datos son privados?</strong> Sí: todo se queda en tu dispositivo. No se graba ningún sonido ni se transmite ningún dato.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>🐾 Los gatos del barrio</h2>
+      <p>Una parte de cada compra nos ayuda a alimentar y cuidar a los gatos callejeros de nuestro barrio. Sigue sus aventuras: <a href="https://www.tiktok.com/@lejardindeschachous" target="_blank">@lejardindeschachous</a></p>
+    </div>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en">
+    <div class="card">
+      <h2>💬 Contact us</h2>
+      <p>A question, an issue, a suggestion? Write to us — we reply quickly.</p>
+      <a class="btn" href="mailto:jajajairhercruz@gmail.com?subject=Chavatar%20—%20Support">Send an email</a>
+    </div>
+    <div class="card">
+      <h2>❓ Frequently asked questions</h2>
+      <ul>
+        <li><strong>How do I restore my purchases?</strong> Settings → Purchases → "Restore purchases", or from the Chavatar Pro screen.</li>
+        <li><strong>AI avatar not showing?</strong> AI generation requires an Apple Intelligence-compatible iPhone.</li>
+        <li><strong>Purr-o-meter hears nothing?</strong> Make sure microphone access is allowed on the Apple Watch, then hold your wrist near your cat in a quiet room.</li>
+        <li><strong>Is my data private?</strong> Yes: everything stays on your device. No audio is recorded, no data is transmitted.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>🐾 The neighborhood cats</h2>
+      <p>Part of every purchase helps us feed and care for the stray cats of our neighborhood. Follow their adventures: <a href="https://www.tiktok.com/@lejardindeschachous" target="_blank">@lejardindeschachous</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Chavatar</p>
+  </footer>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.lang-switch button');
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el =>
+      el.style.display = el.dataset.lang === lang ? 'block' : 'none');
+    buttons.forEach(b => b.classList.toggle('active', b.dataset.set === lang));
+    document.documentElement.lang = lang;
+    localStorage.setItem('chavatar-lang', lang);
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  const saved = localStorage.getItem('chavatar-lang');
+  const nav = (navigator.language || 'fr').slice(0, 2);
+  setLang(saved || (['fr', 'es', 'en'].includes(nav) ? nav : 'en'));
+</script>
+</body>
+</html>
