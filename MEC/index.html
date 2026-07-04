@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Examen Civique — Assistance</title>
+<style>
+  :root {
+    --bleu: #002395; --rouge: #ED2939; --or: #b8860b; --or-clair: #f5d778;
+    --bg: #f7f7fa; --card: #ffffff; --text: #1c1c2e; --muted: #6b6b80;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh; padding: 0 16px 48px;
+  }
+  .tricolore { display: flex; height: 6px; border-radius: 0 0 6px 6px; overflow: hidden;
+               max-width: 640px; margin: 0 auto; }
+  .tricolore span { flex: 1; }
+  .tricolore span:nth-child(1) { background: var(--bleu); }
+  .tricolore span:nth-child(2) { background: #fff; border: 1px solid #eee; }
+  .tricolore span:nth-child(3) { background: var(--rouge); }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; padding: 36px 0 24px; }
+  .logo { font-size: 64px; }
+  h1 { font-size: 30px; font-weight: 800; margin-top: 8px; color: var(--bleu); }
+  .tagline { color: var(--muted); margin-top: 8px; font-size: 15px; }
+  .card {
+    background: var(--card); border: 1px solid #e6e6ee; border-radius: 18px;
+    padding: 22px; margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+  .card h2 { font-size: 17px; margin-bottom: 8px; color: var(--bleu); }
+  .card p, .card li { font-size: 15px; line-height: 1.65; color: var(--text); }
+  .card ul, .card ol { padding-left: 20px; margin-top: 6px; }
+  a { color: var(--bleu); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .btn {
+    display: block; text-align: center; background: var(--bleu); color: #fff;
+    border-radius: 14px; padding: 15px 18px; font-size: 16px; font-weight: 700;
+    margin-top: 12px;
+  }
+  .btn:hover { text-decoration: none; opacity: 0.92; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px;
+           line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="tricolore"><span></span><span></span><span></span></div>
+<div class="wrap">
+  <header>
+    <div class="logo">🐓</div>
+    <h1>Mon Examen Civique</h1>
+    <p class="tagline">Assistance — cartes mémoire, mini-examens et phrases à compléter<br>pour préparer l'examen civique.</p>
+  </header>
+
+  <div class="card">
+    <h2>🔓 J'ai acheté un module mais il reste verrouillé</h2>
+    <p>Ouvrez la <strong>Boutique</strong> (icône sac en haut à droite du menu) puis touchez <strong>« Restaurer mes achats »</strong>. Vérifiez que vous êtes connecté à l'App Store avec le même identifiant Apple que celui utilisé lors de l'achat.</p>
+  </div>
+
+  <div class="card">
+    <h2>💳 Comment fonctionnent les achats ?</h2>
+    <p>Tous les achats sont des <strong>paiements uniques</strong> — il n'y a ni abonnement ni publicité. Vous pouvez débloquer un module à l'unité ou tous les modules avec l'accès complet. Le module « Principes et valeurs de la République » est gratuit sans limite de temps.</p>
+  </div>
+
+  <div class="card">
+    <h2>📱 Où sont stockées mes données de révision ?</h2>
+    <p>Uniquement sur votre appareil. Votre progression (cartes révisées, statistiques, historique) ne quitte jamais votre iPhone ou iPad. Si vous supprimez l'application, ces données sont supprimées avec elle.</p>
+  </div>
+
+  <div class="card">
+    <h2>👤 Mode invité et connexion avec Apple</h2>
+    <p>Vous pouvez utiliser l'application en invité ou vous connecter avec Apple. Pour changer à tout moment : <strong>Options (roue dentée) → Compte</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2>🧠 Comment fonctionne la révision espacée ?</h2>
+    <p>Les cartes mémoire utilisent l'algorithme FSRS : l'application vous représente chaque carte au moment idéal, juste avant que vous ne l'oubliiez. Révisez un peu chaque jour — c'est la régularité qui fait la note.</p>
+  </div>
+
+  <div class="card">
+    <h2>✉️ Une question, une erreur à signaler ?</h2>
+    <p>Vous avez repéré une question inexacte ou obsolète, ou vous rencontrez un problème ? Écrivez-nous, nous répondons rapidement.</p>
+    <a class="btn" href="mailto:jajajairhercruz@gmail.com?subject=Mon%20Examen%20Civique%20—%20Assistance">Contacter l'assistance</a>
+  </div>
+
+  <footer>
+    <a href="confidentialite.html">Politique de confidentialité</a><br>
+    Application indépendante, non affiliée au gouvernement français<br>ni à aucune administration publique.<br>
+    © 2026 Mon Examen Civique
+  </footer>
+</div>
+</body>
+</html>
